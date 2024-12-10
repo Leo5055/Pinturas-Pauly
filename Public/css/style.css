@@ -1,0 +1,181 @@
+/*ESTILOS COMUNES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color:#faf6d9;
+    text-align: center;
+}
+.card{
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+img{
+    border-radius: 10px;
+}
+/*ESTILOS HEADER*/
+header{
+    width: 100%;
+    padding: 150px;
+    text-align: center;
+    background-image: url('../img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header div{
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    color: #753404;
+    text-align: right;
+}
+
+/*ESTILOS NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #a96d42 ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar a{
+    color: #faf6d9;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar a:hover{
+    background-color: #753404;
+    color: #faf6d9;
+}
+/*ESTILOS PARTE PRINCIPAL*/
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex-basis: 25%;
+    background-color: #a96d42;
+    color: #faf6d9;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.asideTitulo{
+    font-weight: 800;
+    align-content: center;
+}
+.image img{
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+    margin: 10px;
+    align-content: space-around;
+}
+.image:hover img{
+    transform: scale(1.06);
+}
+main{
+    flex-basis: 60%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h2{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+ul{
+    text-align: left;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+iframe{
+    border-radius: 20px;
+    margin-top: 20px;
+}
+/*ESTILOS FOOTER*/
+footer{
+    padding: 15px;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+/*ESTILOS DEL FORMULARIO*/
+form{
+    height: 100%;
+    margin: 20px;
+    padding: 40px;
+    background-color: #a96d42;
+    border-radius: 20px;
+    text-align: center;
+}
+fieldset{
+    display: grid;
+    grid-template-columns:30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border-color: #753404;
+    border-style: solid;
+    border-width: 5px;
+    color: #faf6d9;
+}
+legend{
+    font-size: 1.5rem;
+}
+/*ESTILOS BOOTSTRAP*/
+.carousel-item{
+    margin: 20px;
+    max-width: 30%;
+}
+.card{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+/*MEDIA QUERIE*/
+@media (max-width:900px) {
+    header{
+        background-position: center;
+    }
+    .navbar{
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a{
+        text-align: center;
+    }  
+    .principal{
+        flex-direction: column;
+    } 
+    .image img{
+        width: 60%;
+        height: auto;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+}
